@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Icon Links</title>
+    <style>
+        /* Style for the container div */
+        .icon-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center the icons horizontally */
+            flex-wrap: wrap; /* Allow icons to wrap to the next line on smaller screens */
+        }
+
+        /* Style for individual icons */
+        .icon {
+            margin: 10px; /* Add spacing between icons */
+            text-align: center; /* Center text and icon vertically */
+            flex: 1; /* Equal-width columns for icons on larger screens */
+        }
+
+        /* Style for the icon images */
+        .icon img {
+            max-width: 50px; /* Set the maximum width for the icons (adjust as needed) */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            /* Adjust icon size and spacing for smaller screens */
+            .icon {
+                flex-basis: calc(33.33% - 20px); /* Three icons per row with spacing */
+            }
+
+            /* Reduce font size for labels on smaller screens */
+            .icon p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Icon Links</h1>
+    <div class="icon-container">
+        <!-- First Icon Link -->
+        <div class="icon">
+            <a href="link1.html">
+                <img src="icon1.png" alt="Icon 1">
+                <p>Icon 1</p>
+            </a>
+        </div>
+
+        <!-- Second Icon Link -->
+        <div class="icon">
+            <a href="link2.html">
+                <img src="icon2.png" alt="Icon 2">
+                <p>Icon 2</p>
+            </a>
+        </div>
+
+        <!-- Third Icon Link -->
+        <div class="icon">
+            <a href="link3.html">
+                <img src="icon3.png" alt="Icon 3">
+                <p>Icon 3</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
