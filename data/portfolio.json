@@ -61,15 +61,14 @@
   ],
   "projects": [
     {
-      "name": "ATS Platform (Perusal)",
-      "period": "May 2024 – Oct 2025",
-      "description": "End-to-end applicant tracking system built from scratch — candidate management, interview scheduling, resume search, onboarding automation, and recruiter tooling.",
+      "name": "LumenAI",
+      "period": "May 2026 – Present",
+      "description": "A privacy-first AI assistant that runs language models locally using Ollama on a Next.js, NestJS, and TypeScript stack.",
       "highlights": [
-        "Designed candidate search using Elasticsearch/OpenSearch with full-text search, ranking, and resume filtering.",
-        "Built AWS Lambda + EventBridge onboarding pipeline, cutting runtime from 90s → 10s.",
-        "Shipped AI-powered job description generation, reducing manual writing effort by ~90%."
+        "Implemented semantic memory using PostgreSQL and pgvector for vector similarity search and retrieval of relevant historical conversations.",
+        "Built a retrieval and prompt orchestration pipeline that injects relevant memories into LLM context windows for personalized responses."
       ],
-      "tech": ["NestJS", "MySQL", "Elasticsearch", "AWS Lambda", "EventBridge", "React", "Next.js"],
+      "tech": ["Next.js", "NestJS", "TypeScript", "Ollama", "PostgreSQL", "pgvector"],
       "github": null,
       "demo": null
     },
@@ -82,18 +81,6 @@
         "Generates a unique shareable URL per upload with a live-rendered portfolio page."
       ],
       "tech": ["Next.js", "NestJS", "TypeScript", "PostgreSQL"],
-      "github": null,
-      "demo": null
-    },
-    {
-      "name": "LumenAI",
-      "period": "May 2026 – Present",
-      "description": "A privacy-first AI assistant that runs language models locally using Ollama on a Next.js, NestJS, and TypeScript stack.",
-      "highlights": [
-        "Implemented semantic memory using PostgreSQL and pgvector for vector similarity search and retrieval of relevant historical conversations.",
-        "Built a retrieval and prompt orchestration pipeline that injects relevant memories into LLM context windows for personalized responses."
-      ],
-      "tech": ["Next.js", "NestJS", "TypeScript", "Ollama", "PostgreSQL", "pgvector"],
       "github": null,
       "demo": null
     }
