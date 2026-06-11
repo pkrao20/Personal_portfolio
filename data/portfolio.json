@@ -1,0 +1,115 @@
+{
+  "name": "Prashant Rao",
+  "tagline": "Software Engineer · Full-Stack · Fintech",
+  "subtitle": "B.Tech (2024) · IIT Indore",
+  "location": "Bengaluru, Karnataka, India",
+  "available": true,
+  "contact": {
+    "email": "pkraojee2020@gmail.com",
+    "phone": "+91 7052436817",
+    "linkedin": "https://www.linkedin.com/in/pkrao20",
+    "github": "https://github.com/pkrao20",
+    "codechef": "https://www.codechef.com/users/apexlr",
+    "codeforces": "https://codeforces.com/profile/ultimatepk"
+  },
+  "summary": "Civil engineering degree, software engineering career — it wasn't really a plan. I started competitive programming at IIT Indore, hit 5-star on CodeChef and Specialist on Codeforces, and by the time I graduated I'd spent more hours in a code editor than AutoCAD.\n\nThe past two years have been fintech and HR-tech. At Perusal I joined as one of the first engineers and built most of the product from scratch — candidate search on Elasticsearch, an end-to-end interview scheduling system, recruiter tooling, and a Lambda-based onboarding pipeline I eventually got down from 90s to 10s. At BlinkMoney I owned the wealth product end to end, wiring up lump-sum, SIP, and daily SIP flows through Fintech Primitives APIs and fixing a KYC pipeline that was quietly creating duplicate transactions on every retry.\n\nI work across the stack but I'm strongest on the backend — NestJS, PostgreSQL, AWS. I like problems that are annoying to get right: payment idempotency, search relevance, things that break in ways that don't show up in unit tests.",
+  "experience": [
+    {
+      "company": "BlinkMoney",
+      "role": "Software Development Engineer I",
+      "period": "Nov 2025 – Apr 2026",
+      "location": "Remote · Mumbai",
+      "highlights": [
+        "Reworked the KYC sign-up flow by reusing links and tuning database queries, cutting API calls by ~70% and reducing duplicate transactions.",
+        "Improved the lien-marking service increasing loan-creation success by ~20%.",
+        "Built and shipped wealth-management features end to end — lump-sum, SIP, and daily SIP — by connecting Fintech Primitive APIs with NestJS and PostgreSQL."
+      ]
+    },
+    {
+      "company": "Perusal",
+      "role": "Full-Stack Developer / Founding Engineer",
+      "period": "May 2024 – Oct 2025",
+      "location": "Indore, India",
+      "highlights": [
+        "Optimized the AWS Lambda + EventBridge client-onboarding pipeline, cutting run time from 90s to 10s (~88% faster).",
+        "Designed and built REST APIs and backend services using NestJS, MySQL, JWT authentication, and role-based access control, including an automated interview scheduling system.",
+        "Designed candidate search and filtering using Elasticsearch/OpenSearch, enabling full-text search, ranking, and faster resume discovery.",
+        "Automated job-description creation using AI, reducing manual writing effort by ~90%.",
+        "Led the frontend (React, Next.js, TypeScript, Tailwind CSS) and shipped a reusable UI component library on NPM.",
+        "Added unit and integration tests (Jest, React Testing Library) across components and core flows to harden reliability."
+      ]
+    },
+    {
+      "company": "AccunAI",
+      "role": "LLM Trainer",
+      "period": "Feb 2024 – Apr 2024",
+      "location": "Jaipur, India",
+      "highlights": [
+        "Contributed to fine-tuning a globally leading LLM by applying domain expertise in Reinforcement Learning via Human Feedback (RLHF).",
+        "Enhanced model accuracy and real-world applicability, driving improvements in AI performance and user interaction quality."
+      ]
+    },
+    {
+      "company": "VisioCreate",
+      "role": "Full-Stack Developer",
+      "period": "Sep 2023 – Jan 2024",
+      "location": "India",
+      "highlights": [
+        "Built and shipped UI/UX-driven full-stack web applications for clients at a design and development studio."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "LumenAI",
+      "period": "May 2026 – Present",
+      "description": "A privacy-first AI assistant that runs language models locally using Ollama on a Next.js, NestJS, and TypeScript stack.",
+      "highlights": [
+        "Implemented semantic memory using PostgreSQL and pgvector for vector similarity search and retrieval of relevant historical conversations.",
+        "Built a retrieval and prompt orchestration pipeline that injects relevant memories into LLM context windows for personalized responses."
+      ],
+      "tech": ["Next.js", "NestJS", "TypeScript", "Ollama", "PostgreSQL", "pgvector"]
+    }
+  ],
+  "skills": {
+    "Languages": ["C++", "JavaScript (ES6+)", "TypeScript"],
+    "Frontend": ["React.js", "Next.js", "Tailwind CSS", "Material UI", "Context API", "RTK"],
+    "Backend & APIs": ["Node.js", "NestJS", "Express.js", "REST APIs", "Elasticsearch", "OpenSearch"],
+    "Cloud & DevOps": ["AWS Lambda", "EC2", "S3", "EventBridge", "RDS", "Docker", "CI/CD", "Git"],
+    "Databases": ["PostgreSQL", "MySQL", "pgvector"],
+    "Testing & Tools": ["Jest", "React Testing Library", "Postman", "Jira", "Agile/Scrum"],
+    "Core CS": ["Data Structures & Algorithms", "DBMS", "Operating Systems", "Computer Networks"]
+  },
+  "education": [
+    {
+      "institution": "Indian Institute of Technology, Indore",
+      "degree": "Bachelor of Technology – Civil Engineering",
+      "period": "Nov 2020 – May 2024",
+      "location": "Indore, India"
+    },
+    {
+      "institution": "Central Hindu Boys School",
+      "degree": "Senior Secondary (PCM)",
+      "period": "Jul 2018 – Mar 2020",
+      "location": "India"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "5-Star Coder at CodeChef",
+      "detail": "Max Rating 2055",
+      "link": "https://www.codechef.com/users/pkrao20"
+    },
+    {
+      "title": "Specialist at Codeforces",
+      "detail": "Max Rating 1564",
+      "link": "https://codeforces.com/profile/pkrao20"
+    },
+    {
+      "title": "AIR 3 – WE CODE CHALLENGE",
+      "detail": "Organised by Graphic Era Hill University · 2K+ participants",
+      "link": null
+    }
+  ],
+  "certifications": ["DSA Self Paced"]
+}
