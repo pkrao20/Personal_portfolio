@@ -3,13 +3,9 @@ import { SectionLabel } from "./About";
 type SkillMap = Record<string, string[]>;
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Languages:        "bg-violet-50  text-violet-700  border-violet-100",
-  Frontend:         "bg-sky-50     text-sky-700     border-sky-100",
-  "Backend & APIs": "bg-emerald-50 text-emerald-700 border-emerald-100",
-  "Cloud & DevOps": "bg-orange-50  text-orange-700  border-orange-100",
-  Databases:        "bg-rose-50    text-rose-700    border-rose-100",
-  "Testing & Tools":"bg-amber-50   text-amber-700   border-amber-100",
-  "Core CS":        "bg-slate-50   text-slate-600   border-slate-100",
+  Backend:  "bg-emerald-50 text-emerald-700 border-emerald-100",
+  Frontend: "bg-sky-50     text-sky-700     border-sky-100",
+  Cloud:    "bg-orange-50  text-orange-700  border-orange-100",
 };
 
 export default function Skills({ skills }: { skills: SkillMap }) {

@@ -1,4 +1,4 @@
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Mail, FileText } from "lucide-react";
 
 function GithubIcon({ size = 16 }: { size?: number }) {
   return (
@@ -22,6 +22,13 @@ type HeroProps = {
   location: string; available: boolean; contact: Contact;
 };
 
+const TIMELINE = [
+  { label: "2+ Years Experience" },
+  { label: "Founding Engineer" },
+  { label: "IIT Indore" },
+  { label: "Immediate Joiner" },
+];
+
 export default function Hero({ name, tagline, subtitle, location, available, contact }: HeroProps) {
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 pt-20 max-w-6xl mx-auto relative">
@@ -29,7 +36,7 @@ export default function Hero({ name, tagline, subtitle, location, available, con
         {available && (
           <span className="inline-flex items-center gap-2 text-xs font-medium text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-full px-3 py-1 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            Available for opportunities
+            Open to Founding Engineer &amp; Product Engineering Roles
           </span>
         )}
 
@@ -42,19 +49,28 @@ export default function Hero({ name, tagline, subtitle, location, available, con
           {subtitle} &nbsp;·&nbsp; {location}
         </p>
 
-        {/* Top skills */}
-        <div className="flex flex-wrap gap-2 mb-8">
-          {["NestJS", "PostgreSQL", "AWS", "React", "TypeScript", "Elasticsearch"].map((skill) => (
+        {/* Timeline strip */}
+        <div className="flex flex-wrap gap-3 mb-8">
+          {TIMELINE.map((item) => (
             <span
-              key={skill}
-              className="text-xs font-medium px-3 py-1 rounded-full bg-white/70 border border-black/10 text-[#4e4b6a] backdrop-blur-sm"
+              key={item.label}
+              className="text-xs font-medium px-3 py-1 rounded-full bg-[#0f0e17]/5 border border-black/10 text-[#4e4b6a]"
             >
-              {skill}
+              {item.label}
             </span>
           ))}
         </div>
 
         <div className="flex flex-wrap gap-3 mb-12">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm bg-[#4f46e5] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#4338ca] transition-colors"
+          >
+            <FileText size={15} />
+            Resume
+          </a>
           <a
             href={`mailto:${contact.email}`}
             className="inline-flex items-center gap-2 text-sm bg-[#0f0e17] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#2a2840] transition-colors"

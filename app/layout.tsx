@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prashant Rao · Software Engineer",
+  title: "Prashant Rao | Founding Engineer | IIT Indore",
   description:
-    "Full-stack software engineer with 2 years of experience in fintech and HR-tech. IIT Indore grad. React, Next.js, Node.js, AWS.",
+    "Founding Engineer with 2+ years building SaaS, fintech and AI products from 0→1. IIT Indore grad. NestJS, PostgreSQL, AWS, React.",
 };
 
 export default function RootLayout({

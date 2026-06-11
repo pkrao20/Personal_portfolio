@@ -1,7 +1,7 @@
 {
   "name": "Prashant Rao",
-  "tagline": "Software Engineer · Full-Stack · Fintech",
-  "subtitle": "B.Tech (2024) · IIT Indore",
+  "tagline": "Founding Engineer & Software Engineer",
+  "subtitle": "Building scalable SaaS, Fintech and AI products.",
   "location": "Bengaluru, Karnataka, India",
   "available": true,
   "contact": {
@@ -12,7 +12,7 @@
     "codechef": "https://www.codechef.com/users/apexlr",
     "codeforces": "https://codeforces.com/profile/ultimatepk"
   },
-  "summary": "Civil engineering degree, software engineering career — it wasn't really a plan. I started competitive programming at IIT Indore, hit 5-star on CodeChef and Specialist on Codeforces, and by the time I graduated I'd spent more hours in a code editor than AutoCAD.\n\nThe past two years have been fintech and HR-tech. At Perusal I joined as one of the first engineers and built most of the product from scratch — candidate search on Elasticsearch, an end-to-end interview scheduling system, recruiter tooling, and a Lambda-based onboarding pipeline I eventually got down from 90s to 10s. At BlinkMoney I owned the wealth product end to end, wiring up lump-sum, SIP, and daily SIP flows through Fintech Primitives APIs and fixing a KYC pipeline that was quietly creating duplicate transactions on every retry.\n\nI work across the stack but I'm strongest on the backend — NestJS, PostgreSQL, AWS. I like problems that are annoying to get right: payment idempotency, search relevance, things that break in ways that don't show up in unit tests.",
+  "summary": "Civil engineering degree, software engineering career — it wasn't really a plan. I started competitive programming at IIT Indore, hit 5-star on CodeChef and Specialist on Codeforces, and by the time I graduated I'd spent more hours in a code editor than AutoCAD.\n\nThe past two years have been fintech and HR-tech. At Perusal I joined as one of the first engineers and built most of the product from scratch — candidate search on Elasticsearch, an end-to-end interview scheduling system, recruiter tooling, and a Lambda-based onboarding pipeline I eventually got down from 90s to 10s. At BlinkMoney I owned the wealth product end to end, wiring up lump-sum, SIP, and daily SIP flows through Fintech Primitives APIs and fixing a KYC pipeline that was quietly creating duplicate transactions on every retry.\n\nI enjoy joining early-stage teams where I can own products end-to-end, work directly with founders, and solve difficult engineering problems. My strongest areas are backend systems, search infrastructure, workflow automation, and AI-powered applications.",
   "experience": [
     {
       "company": "BlinkMoney",
@@ -27,7 +27,7 @@
     },
     {
       "company": "Perusal",
-      "role": "Full-Stack Developer / Founding Engineer",
+      "role": "Founding Engineer",
       "period": "May 2024 – Oct 2025",
       "location": "Indore, India",
       "highlights": [
@@ -61,6 +61,31 @@
   ],
   "projects": [
     {
+      "name": "ATS Platform (Perusal)",
+      "period": "May 2024 – Oct 2025",
+      "description": "End-to-end applicant tracking system built from scratch — candidate management, interview scheduling, resume search, onboarding automation, and recruiter tooling.",
+      "highlights": [
+        "Designed candidate search using Elasticsearch/OpenSearch with full-text search, ranking, and resume filtering.",
+        "Built AWS Lambda + EventBridge onboarding pipeline, cutting runtime from 90s → 10s.",
+        "Shipped AI-powered job description generation, reducing manual writing effort by ~90%."
+      ],
+      "tech": ["NestJS", "MySQL", "Elasticsearch", "AWS Lambda", "EventBridge", "React", "Next.js"],
+      "github": null,
+      "demo": null
+    },
+    {
+      "name": "CV2Link",
+      "period": "2025",
+      "description": "AI-powered resume-to-portfolio generator. Upload a resume and get a shareable, styled portfolio page in seconds.",
+      "highlights": [
+        "Parses resume content using LLMs and maps it to a structured portfolio schema.",
+        "Generates a unique shareable URL per upload with a live-rendered portfolio page."
+      ],
+      "tech": ["Next.js", "NestJS", "TypeScript", "PostgreSQL"],
+      "github": null,
+      "demo": null
+    },
+    {
       "name": "LumenAI",
       "period": "May 2026 – Present",
       "description": "A privacy-first AI assistant that runs language models locally using Ollama on a Next.js, NestJS, and TypeScript stack.",
@@ -68,17 +93,15 @@
         "Implemented semantic memory using PostgreSQL and pgvector for vector similarity search and retrieval of relevant historical conversations.",
         "Built a retrieval and prompt orchestration pipeline that injects relevant memories into LLM context windows for personalized responses."
       ],
-      "tech": ["Next.js", "NestJS", "TypeScript", "Ollama", "PostgreSQL", "pgvector"]
+      "tech": ["Next.js", "NestJS", "TypeScript", "Ollama", "PostgreSQL", "pgvector"],
+      "github": null,
+      "demo": null
     }
   ],
   "skills": {
-    "Languages": ["C++", "JavaScript (ES6+)", "TypeScript"],
-    "Frontend": ["React.js", "Next.js", "Tailwind CSS", "Material UI", "Context API", "RTK"],
-    "Backend & APIs": ["Node.js", "NestJS", "Express.js", "REST APIs", "Elasticsearch", "OpenSearch"],
-    "Cloud & DevOps": ["AWS Lambda", "EC2", "S3", "EventBridge", "RDS", "Docker", "CI/CD", "Git"],
-    "Databases": ["PostgreSQL", "MySQL", "pgvector"],
-    "Testing & Tools": ["Jest", "React Testing Library", "Postman", "Jira", "Agile/Scrum"],
-    "Core CS": ["Data Structures & Algorithms", "DBMS", "Operating Systems", "Computer Networks"]
+    "Backend": ["NestJS", "Node.js", "PostgreSQL", "MySQL", "Elasticsearch"],
+    "Frontend": ["React", "Next.js", "TypeScript", "Tailwind"],
+    "Cloud": ["AWS", "Docker", "CI/CD"]
   },
   "education": [
     {

@@ -1,12 +1,14 @@
 import portfolioData from "@/data/portfolio.json";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Highlights from "@/components/Highlights";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Achievements from "@/components/Achievements";
+import WhatILikeBuilding from "@/components/WhatILikeBuilding";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 // Server Component — data resolved at request time on the server.
@@ -26,6 +28,10 @@ export default function Home() {
           available={data.available}
           contact={data.contact}
         />
+
+        <div className="border-t border-black/8">
+          <Highlights />
+        </div>
 
         <div className="border-t border-black/8">
           <About summary={data.summary} />
@@ -49,6 +55,10 @@ export default function Home() {
 
         <div className="border-t border-black/8">
           <Achievements achievements={data.achievements} />
+        </div>
+
+        <div className="border-t border-black/8">
+          <WhatILikeBuilding />
         </div>
 
         <div className="border-t border-black/8">
