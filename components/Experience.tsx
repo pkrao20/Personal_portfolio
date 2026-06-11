@@ -14,14 +14,14 @@ export default function Experience({ experience }: { experience: Job[] }) {
       <div className="relative border-l border-black/10 pl-8 space-y-12">
         {experience.map((job, i) => (
           <div key={i} className="relative group">
-            <span className="absolute -left-[2.15rem] top-1.5 w-3 h-3 rounded-full border-2 border-[#4f46e5] bg-[#eceaf3] group-hover:bg-[#4f46e5] transition-colors" />
+            <span className="absolute -left-[2.39rem] top-1.5 w-3 h-3 rounded-full border-2 border-[#4f46e5] bg-[#eceaf3] group-hover:bg-[#4f46e5] transition-colors" />
 
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-3">
               <div>
                 <h3 className="text-lg font-semibold text-[#0f0e17]">{job.role}</h3>
                 <p className="text-[#4f46e5] text-sm font-medium">{job.company}</p>
               </div>
-              <div className="text-right shrink-0">
+              <div className="text-left sm:text-right shrink-0">
                 <p className="text-xs text-[#8a87a2]">{job.period}</p>
                 <p className="text-xs text-[#a09db8]">{job.location}</p>
               </div>

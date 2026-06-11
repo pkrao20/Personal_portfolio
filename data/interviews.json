@@ -1,1 +1,96 @@
-[]
+[
+  {
+    "slug": "susov-consulting-frontend",
+    "company": "Susov Consulting",
+    "role": "Frontend Engineer",
+    "date": "2026-05",
+    "outcome": "Rejected",
+    "excerpt": "Two-round frontend process — R1 was a JavaScript fundamentals deep-dive, R2 was a live coding assignment (data table with modal, search, and API integration) reviewed by the CPO with a focus on clean, typed, and modular code.",
+    "rounds": [
+      {
+        "name": "R1 — Technical Screen",
+        "type": "Technical",
+        "description": "JavaScript fundamentals round covering core concepts, browser APIs, and a practical problem on flattening an n-dimensional array solved using recursion without built-in methods.",
+        "questions": [
+          "setTimeout and setInterval — differences, use cases, and how to clear them",
+          "var vs let vs const — scoping, hoisting, and temporal dead zone",
+          "undefined vs null vs undeclared — when each occurs and how to check",
+          "Deep copy vs shallow copy — explain the difference with a live-coded example",
+          "React Router and Accordion component implementation",
+          "Difference between window and document; common window functions",
+          "How would you efficiently render 1 billion records in the browser?",
+          "Flatten an n-dimensional array in JavaScript using recursion (no built-in flat/flatMap allowed)"
+        ],
+        "tips": "The flattening question was explicitly restricted to recursion — practice writing it without Array.prototype.flat. For the billion-records question, hit on virtual/windowed lists (react-window / react-virtual) and pagination."
+      },
+      {
+        "name": "R2 — Assignment + CPO Interview",
+        "type": "Coding Assignment + Behavioural",
+        "description": "50-minute take-home assignment reviewed with the CPO. Task: build a data table showing name, email, and company fetched from an API, with a modal opening full user details on name click, and search filtering by name and email. Emphasis was on clean TypeScript, modular code, and proper loading/error state management.",
+        "questions": [
+          "Build a table fetching user data (name, email, company) from an API with loading and error states",
+          "Open a full-details modal on clicking a user's name",
+          "Add search/filter by name and email",
+          "How would you extend the TypeScript interfaces and types, and where do those changes propagate?",
+          "Explain lazy loading and where you'd apply it in this assignment",
+          "What AI tools do you use day-to-day? (ChatGPT, Gemini, Claude Code, GitHub Copilot for boilerplate)",
+          "How do you resolve conflicts in a team or disagreements over implementation approach?"
+        ],
+        "tips": "Prioritise TypeScript strictness and splitting components early — the CPO cared a lot about code structure over feature completeness. Manage loading and error states explicitly from the start rather than bolting them on."
+      }
+    ],
+    "overallTips": "Susov's bar is heavily weighted toward clean, readable frontend code rather than algorithmic complexity. In R1, get comfortable with JS fundamentals at a whiteboard level. In R2, treat the 50-minute window as a mini PR review — organise files, type everything, and handle edge states."
+  },
+  {
+    "slug": "yuno-backend",
+    "company": "Yuno",
+    "role": "Backend Engineer",
+    "date": "2026-05",
+    "outcome": "Rejected",
+    "excerpt": "Referral-driven backend process — 3 rounds. R1 was an OA mixing DSA and API aggregation. R2 went deep on Node.js vs Go, goroutines, and databases. R3 covered SOLID, deployment (Docker, AWS ECS/EC2, blue-green, canary), and a live palindrome in Go. Did well but was ultimately rejected.",
+    "rounds": [
+      {
+        "name": "R1 — Online Assessment",
+        "type": "DSA + Practical Coding",
+        "description": "Online assessment with two problems: a basic DSA question and a practical problem involving calling an external API, collecting and aggregating the response data, sorting it, and returning the top-N elements.",
+        "questions": [
+          "Basic DSA problem (arrays / strings)",
+          "Call an API endpoint, collect paginated/batched response data, sort the results, and return the top-N elements efficiently"
+        ],
+        "tips": "For the API aggregation problem, handle pagination cleanly and think about sort stability and efficiency when N is much smaller than the total dataset — a min-heap of size N beats sorting everything."
+      },
+      {
+        "name": "R2 — Technical Deep Dive",
+        "type": "Technical",
+        "description": "Deep technical round covering Go internals, concurrency, Node.js vs Go trade-offs, and database fundamentals. Also included an experience discussion.",
+        "questions": [
+          "Comparison of Node.js and Golang — when would you pick one over the other?",
+          "Defer in Golang — how does it work and what are common use cases?",
+          "Goroutines — how they differ from threads, the Go scheduler (M:N model)",
+          "Mutex in Golang — when to use sync.Mutex vs channels for synchronisation",
+          "ACID properties — explain each and how they apply to real transactions",
+          "Experience discussion — walked through past projects and technical decisions"
+        ],
+        "tips": "Be precise about goroutines vs OS threads — interviewers at Go-heavy companies probe deeper than just 'goroutines are lightweight'. Know when to use mutex vs channels: mutex for shared state, channels for communication."
+      },
+      {
+        "name": "R3 — System Design + Behavioural + Coding",
+        "type": "Mixed",
+        "description": "Broad round covering software design principles, deployment pipelines, Go language specifics, seniority/career questions, and a live coding problem — writing a palindrome checker in Go.",
+        "questions": [
+          "SOLID principles — explain each with examples from your own codebase",
+          "Describe your current company's deployment process",
+          "Docker — how you use it and how images/containers work",
+          "AWS ECS vs EC2 — when would you choose one over the other?",
+          "Blue-green deployment vs canary deployment — differences and trade-offs",
+          "Definition of interfaces and structs in Go — how they differ and when to use each",
+          "How do you assess your own seniority as an engineer?",
+          "Why are you leaving your current job?",
+          "Live code: write a palindrome checker in Golang"
+        ],
+        "tips": "The seniority question is a maturity check — talk about ownership, impact, and knowing what you don't know rather than just years of experience. For the palindrome in Go, use a two-pointer approach on a rune slice to handle Unicode correctly."
+      }
+    ],
+    "overallTips": "Yuno's process is Go-heavy from R2 onwards — brush up on goroutines, mutexes, defer, and interfaces before interviewing. R3 mixes deployment knowledge with soft questions; have a clear, honest answer for why you're switching. Three strong rounds and still rejected — the bar is high, possibly headcount-driven."
+  }
+]

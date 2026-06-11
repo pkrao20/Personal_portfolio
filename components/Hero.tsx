@@ -27,12 +27,44 @@ const TIMELINE = [
   { label: "Founding Engineer" },
   { label: "IIT Indore" },
   { label: "Immediate Joiner" },
+  { label: "Learning AI" },
 ];
 
 export default function Hero({ name, tagline, subtitle, location, available, contact }: HeroProps) {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 pt-20 max-w-6xl mx-auto relative">
-      <div className="max-w-3xl">
+    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden">
+      {/* Lavender tint — top right */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          top: -80,
+          right: -80,
+          width: 600,
+          height: 600,
+          background:
+            "radial-gradient(ellipse at center, rgba(192,168,255,0.45) 0%, rgba(167,139,250,0.20) 50%, transparent 75%)",
+          pointerEvents: "none",
+          zIndex: 0,
+        }}
+      />
+      {/* Sky tint — top left */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          top: -60,
+          left: -80,
+          width: 520,
+          height: 520,
+          background:
+            "radial-gradient(ellipse at center, rgba(147,219,251,0.40) 0%, rgba(125,211,252,0.15) 50%, transparent 75%)",
+          pointerEvents: "none",
+          zIndex: 0,
+        }}
+      />
+      <div className="px-6 pt-20 max-w-6xl mx-auto w-full">
+      <div className="max-w-3xl relative z-10">
         {available && (
           <span className="inline-flex items-center gap-2 text-xs font-medium text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-full px-3 py-1 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -63,7 +95,7 @@ export default function Hero({ name, tagline, subtitle, location, available, con
 
         <div className="flex flex-wrap gap-3 mb-12">
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1OrY7jBvpklEGQYKxeZmAkQamPY7IB6Za/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm bg-[#4f46e5] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#4338ca] transition-colors"
@@ -98,10 +130,11 @@ export default function Hero({ name, tagline, subtitle, location, available, con
           </a>
         </div>
       </div>
+      </div>
 
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#8a87a2] hover:text-[#4e4b6a] transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#8a87a2] hover:text-[#4e4b6a] transition-colors animate-bounce z-10"
         aria-label="Scroll down"
       >
         <ArrowDown size={20} />
