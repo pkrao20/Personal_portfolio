@@ -8,7 +8,7 @@ export default function About({ summary }: { summary: string }) {
       </h2>
       <div className="max-w-3xl space-y-5">
         {paragraphs.map((p, i) => (
-          <p key={i} className="text-[#4e4b6a] text-lg leading-relaxed">{p}</p>
+          <p key={i} className="text-[#2d2b45] text-lg leading-relaxed">{p}</p>
         ))}
       </div>
     </section>

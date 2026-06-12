@@ -30,8 +30,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-<Grain />
-        {children}
+        <Grain />
+        <div className="relative flex flex-col flex-1" style={{ zIndex: 1 }}>
+          {children}
+        </div>
       </body>
     </html>
   );

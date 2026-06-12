@@ -42,7 +42,7 @@ export default async function InterviewDetailPage({ params }: { params: Promise<
   if (!entry) notFound();
 
   const outcomeClass =
-    OUTCOME_STYLES[entry.outcome] ?? "text-[#4e4b6a] bg-zinc-400/10 border-zinc-400/20";
+    OUTCOME_STYLES[entry.outcome] ?? "text-[#2d2b45] bg-zinc-400/10 border-zinc-400/20";
 
   return (
     <PageShell backHref="/interview" backLabel="All experiences">
@@ -53,7 +53,7 @@ export default async function InterviewDetailPage({ params }: { params: Promise<
             <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full border ${outcomeClass}`}>
               {entry.outcome}
             </span>
-            <span className="text-xs text-[#8a87a2]">
+            <span className="text-xs text-[#5a5775]">
               {new Date(`${entry.date}-01`).toLocaleDateString("en-IN", {
                 year: "numeric",
                 month: "long",
@@ -64,9 +64,9 @@ export default async function InterviewDetailPage({ params }: { params: Promise<
           <h1 className="text-3xl md:text-4xl font-bold text-[#0f0e17] leading-tight mb-1">
             {entry.company}
           </h1>
-          <p className="text-[#4e4b6a] text-lg mb-5">{entry.role}</p>
+          <p className="text-[#2d2b45] text-lg mb-5">{entry.role}</p>
 
-          <p className="text-[#4e4b6a] leading-relaxed border-l-2 border-indigo-200 pl-4">
+          <p className="text-[#2d2b45] leading-relaxed border-l-2 border-indigo-200 pl-4">
             {entry.excerpt}
           </p>
         </header>
@@ -85,17 +85,17 @@ export default async function InterviewDetailPage({ params }: { params: Promise<
                 </span>
               </div>
 
-              <p className="text-sm text-[#8a87a2] mb-5">{round.description}</p>
+              <p className="text-sm text-[#5a5775] mb-5">{round.description}</p>
 
               {round.questions.length > 0 && (
                 <div className="mb-5">
-                  <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#8a87a2] mb-3">
+                  <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#5a5775] mb-3">
                     <MessageSquare size={11} />
                     Questions asked
                   </p>
                   <ul className="space-y-2">
                     {round.questions.map((q, j) => (
-                      <li key={j} className="flex gap-3 text-sm text-[#4e4b6a]">
+                      <li key={j} className="flex gap-3 text-sm text-[#2d2b45]">
                         <span className="mt-1.5 w-1 h-1 rounded-full bg-black/20 shrink-0" />
                         {q}
                       </li>
@@ -109,7 +109,7 @@ export default async function InterviewDetailPage({ params }: { params: Promise<
                   <Lightbulb size={11} />
                   Tips
                 </p>
-                <p className="text-sm text-[#4e4b6a] leading-relaxed">{round.tips}</p>
+                <p className="text-sm text-[#2d2b45] leading-relaxed">{round.tips}</p>
               </div>
             </div>
           ))}
@@ -121,7 +121,7 @@ export default async function InterviewDetailPage({ params }: { params: Promise<
             <CheckCircle size={15} />
             Overall advice
           </p>
-          <p className="text-[#4e4b6a] leading-relaxed">{entry.overallTips}</p>
+          <p className="text-[#2d2b45] leading-relaxed">{entry.overallTips}</p>
         </div>
       </article>
     </PageShell>

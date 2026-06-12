@@ -22,14 +22,14 @@ export default function Experience({ experience }: { experience: Job[] }) {
                 <p className="text-[#4f46e5] text-sm font-medium">{job.company}</p>
               </div>
               <div className="text-left sm:text-right shrink-0">
-                <p className="text-xs text-[#8a87a2]">{job.period}</p>
-                <p className="text-xs text-[#a09db8]">{job.location}</p>
+                <p className="text-xs text-[#5a5775]">{job.period}</p>
+                <p className="text-xs text-[#6b6888]">{job.location}</p>
               </div>
             </div>
 
             <ul className="space-y-2">
               {job.highlights.map((point, j) => (
-                <li key={j} className="flex gap-3 text-sm text-[#4e4b6a]">
+                <li key={j} className="flex gap-3 text-sm text-[#2d2b45]">
                   <span className="mt-1.5 w-1 h-1 rounded-full bg-black/20 shrink-0" />
                   {point}
                 </li>

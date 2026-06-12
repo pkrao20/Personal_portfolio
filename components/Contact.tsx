@@ -56,7 +56,7 @@ export default function Contact({ contact }: { contact: Contact }) {
     <section id="contact" className="py-24 px-6 max-w-6xl mx-auto">
       <SectionLabel>Contact</SectionLabel>
       <h2 className="text-3xl md:text-4xl font-bold text-[#0f0e17] mb-4">Let&apos;s connect</h2>
-      <p className="text-[#4e4b6a] mb-12 max-w-xl">
+      <p className="text-[#2d2b45] mb-12 max-w-xl">
         Open to new roles, collaborations, or just a good technical conversation. Feel free to reach
         out through any of the channels below.
       </p>
@@ -77,7 +77,7 @@ export default function Contact({ contact }: { contact: Contact }) {
                 <Icon size={16} />
               </div>
               <div className="min-w-0">
-                <p className="text-xs text-[#8a87a2]">{label}</p>
+                <p className="text-xs text-[#5a5775]">{label}</p>
                 <p className="text-sm text-[#0f0e17] truncate">{display}</p>
               </div>
             </a>

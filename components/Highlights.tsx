@@ -16,7 +16,7 @@ export default function Highlights() {
       <SectionLabel>Highlights</SectionLabel>
       <ul className="flex flex-col gap-3 max-w-2xl">
         {HIGHLIGHTS.map((item) => (
-          <li key={item} className="flex items-start gap-3 text-[#4e4b6a] text-base">
+          <li key={item} className="flex items-start gap-3 text-[#2d2b45] text-base">
             <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#4f46e5] shrink-0" />
             {item}
           </li>

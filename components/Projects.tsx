@@ -19,9 +19,9 @@ export default function Projects({ projects }: { projects: Project[] }) {
           >
             <div className="flex items-baseline justify-between mb-3">
               <h3 className="text-lg font-semibold text-[#0f0e17]">{project.name}</h3>
-              <span className="text-xs text-[#8a87a2]">{project.period}</span>
+              <span className="text-xs text-[#5a5775]">{project.period}</span>
             </div>
-            <p className="text-sm text-[#4e4b6a] mb-4">{project.description}</p>
+            <p className="text-sm text-[#2d2b45] mb-4">{project.description}</p>
             <ul className="space-y-1.5 mb-5">
               {project.highlights.map((h, j) => (
                 <li key={j} className="flex gap-3 text-xs text-[#6e6b85]">

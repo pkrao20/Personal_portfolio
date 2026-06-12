@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-[#8a87a2]">
+          <div className="flex items-center gap-4 text-sm text-[#5a5775]">
             <span>
               {new Date(post.date).toLocaleDateString("en-IN", {
                 year: "numeric",
@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
             </span>
           </div>
 
-          <p className="mt-6 text-[#4e4b6a] text-lg leading-relaxed border-l-2 border-indigo-200 pl-4">
+          <p className="mt-6 text-[#2d2b45] text-lg leading-relaxed border-l-2 border-indigo-200 pl-4">
             {post.excerpt}
           </p>
         </header>
@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
               <h2 className="text-xl font-semibold text-[#0f0e17] mb-4">{section.heading}</h2>
               <div className="space-y-4">
                 {section.body.map((paragraph, j) => (
-                  <p key={j} className="text-[#4e4b6a] leading-relaxed">
+                  <p key={j} className="text-[#2d2b45] leading-relaxed">
                     {paragraph}
                   </p>
                 ))}

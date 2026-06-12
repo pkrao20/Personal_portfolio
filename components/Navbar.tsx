@@ -36,7 +36,7 @@ export default function Navbar({ name }: { name: string }) {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm text-[#4e4b6a] hover:text-[#0f0e17] transition-colors px-3 py-1.5 rounded-md hover:bg-black/5"
+                className="text-sm text-[#2d2b45] hover:text-[#0f0e17] transition-colors px-3 py-1.5 rounded-md hover:bg-black/5"
               >
                 {l.label}
               </a>
@@ -57,7 +57,7 @@ export default function Navbar({ name }: { name: string }) {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 rounded-md text-[#4e4b6a] hover:bg-black/5 transition-colors"
+          className="md:hidden p-2 rounded-md text-[#2d2b45] hover:bg-black/5 transition-colors"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
         >
@@ -73,7 +73,7 @@ export default function Navbar({ name }: { name: string }) {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-sm text-[#4e4b6a] hover:text-[#0f0e17] py-2.5 px-3 rounded-md hover:bg-black/5 transition-colors"
+              className="text-sm text-[#2d2b45] hover:text-[#0f0e17] py-2.5 px-3 rounded-md hover:bg-black/5 transition-colors"
             >
               {l.label}
             </a>

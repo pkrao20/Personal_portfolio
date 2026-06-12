@@ -32,20 +32,20 @@ export default function InterviewsPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-[#0f0e17] mb-4">
           Interview write-ups
         </h1>
-        <p className="text-[#4e4b6a] mb-14 max-w-xl">
+        <p className="text-[#2d2b45] mb-14 max-w-xl">
           Round-by-round breakdowns of real SDE interviews — what was asked, what worked, and what I'd
           do differently.
         </p>
 
         {interviews.length === 0 ? (
           <div className="rounded-xl border border-black/8 border-dashed p-16 text-center">
-            <p className="text-[#8a87a2] text-sm">Write-ups coming soon.</p>
+            <p className="text-[#5a5775] text-sm">Write-ups coming soon.</p>
           </div>
         ) : (
           <div className="space-y-6">
             {interviews.map((entry) => {
               const outcomeClass =
-                OUTCOME_STYLES[entry.outcome] ?? "text-[#4e4b6a] bg-zinc-400/10 border-zinc-400/20";
+                OUTCOME_STYLES[entry.outcome] ?? "text-[#2d2b45] bg-zinc-400/10 border-zinc-400/20";
               return (
                 <Link
                   key={entry.slug}
@@ -57,13 +57,13 @@ export default function InterviewsPage() {
                       <h2 className="text-lg font-semibold text-[#0f0e17] group-hover:text-indigo-600 transition-colors">
                         {entry.company}
                       </h2>
-                      <p className="text-sm text-[#4e4b6a]">{entry.role}</p>
+                      <p className="text-sm text-[#2d2b45]">{entry.role}</p>
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
                       <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full border ${outcomeClass}`}>
                         {entry.outcome}
                       </span>
-                      <span className="text-xs text-[#a09db8]">
+                      <span className="text-xs text-[#6b6888]">
                         {new Date(`${entry.date}-01`).toLocaleDateString("en-IN", {
                           year: "numeric",
                           month: "short",
@@ -71,13 +71,13 @@ export default function InterviewsPage() {
                       </span>
                     </div>
                   </div>
-                  <p className="text-sm text-[#4e4b6a] mb-4 leading-relaxed">{entry.excerpt}</p>
+                  <p className="text-sm text-[#2d2b45] mb-4 leading-relaxed">{entry.excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 text-xs text-[#a09db8]">
+                    <div className="flex items-center gap-1.5 text-xs text-[#6b6888]">
                       <BookOpen size={12} />
                       {entry.rounds.length} round{entry.rounds.length !== 1 ? "s" : ""}
                     </div>
-                    <ArrowRight size={14} className="text-[#a09db8] group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all" />
+                    <ArrowRight size={14} className="text-[#6b6888] group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all" />
                   </div>
                 </Link>
               );

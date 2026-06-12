@@ -76,8 +76,8 @@ export default function Hero({ name, tagline, subtitle, location, available, con
           {name}
         </h1>
 
-        <p className="text-xl md:text-2xl text-[#4e4b6a] font-light mb-2">{tagline}</p>
-        <p className="text-sm text-[#8a87a2] mb-8">
+        <p className="text-xl md:text-2xl text-[#2d2b45] font-light mb-2">{tagline}</p>
+        <p className="text-sm text-[#5a5775] mb-8">
           {subtitle} &nbsp;·&nbsp; {location}
         </p>
 
@@ -86,7 +86,7 @@ export default function Hero({ name, tagline, subtitle, location, available, con
           {TIMELINE.map((item) => (
             <span
               key={item.label}
-              className="text-xs font-medium px-3 py-1 rounded-full bg-[#0f0e17]/5 border border-black/10 text-[#4e4b6a]"
+              className="text-xs font-medium px-3 py-1 rounded-full bg-[#0f0e17]/5 border border-black/10 text-[#2d2b45]"
             >
               {item.label}
             </span>
@@ -114,7 +114,7 @@ export default function Hero({ name, tagline, subtitle, location, available, con
             href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm border border-black/15 text-[#4e4b6a] bg-white/50 px-5 py-2.5 rounded-lg hover:border-black/30 hover:text-[#0f0e17] transition-colors"
+            className="inline-flex items-center gap-2 text-sm border border-black/15 text-[#2d2b45] bg-white/50 px-5 py-2.5 rounded-lg hover:border-black/30 hover:text-[#0f0e17] transition-colors"
           >
             <LinkedinIcon size={15} />
             LinkedIn
@@ -123,7 +123,7 @@ export default function Hero({ name, tagline, subtitle, location, available, con
             href={contact.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm border border-black/15 text-[#4e4b6a] bg-white/50 px-5 py-2.5 rounded-lg hover:border-black/30 hover:text-[#0f0e17] transition-colors"
+            className="inline-flex items-center gap-2 text-sm border border-black/15 text-[#2d2b45] bg-white/50 px-5 py-2.5 rounded-lg hover:border-black/30 hover:text-[#0f0e17] transition-colors"
           >
             <GithubIcon size={15} />
             GitHub
@@ -134,7 +134,7 @@ export default function Hero({ name, tagline, subtitle, location, available, con
 
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#8a87a2] hover:text-[#4e4b6a] transition-colors animate-bounce z-10"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#5a5775] hover:text-[#2d2b45] transition-colors animate-bounce z-10"
         aria-label="Scroll down"
       >
         <ArrowDown size={20} />

@@ -21,10 +21,10 @@ export default function Education({ education }: { education: EducationEntry[] }
             <div className="flex-1 min-w-0">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                 <h3 className="text-base font-semibold text-[#0f0e17]">{entry.institution}</h3>
-                <span className="text-xs text-[#8a87a2] shrink-0">{entry.period}</span>
+                <span className="text-xs text-[#5a5775] shrink-0">{entry.period}</span>
               </div>
-              <p className="text-sm text-[#4e4b6a] mt-0.5">{entry.degree}</p>
-              <p className="text-xs text-[#a09db8] mt-0.5">{entry.location}</p>
+              <p className="text-sm text-[#2d2b45] mt-0.5">{entry.degree}</p>
+              <p className="text-xs text-[#6b6888] mt-0.5">{entry.location}</p>
             </div>
           </div>
         ))}

@@ -22,14 +22,14 @@ export default function Achievements({ achievements }: { achievements: Achieveme
                   href={a.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#a09db8] hover:text-[#4f46e5] transition-colors"
+                  className="text-[#6b6888] hover:text-[#4f46e5] transition-colors"
                 >
                   <ExternalLink size={14} />
                 </a>
               )}
             </div>
             <p className="text-sm font-semibold text-[#0f0e17] mb-1">{a.title}</p>
-            <p className="text-xs text-[#8a87a2]">{a.detail}</p>
+            <p className="text-xs text-[#5a5775]">{a.detail}</p>
           </div>
         ))}
       </div>

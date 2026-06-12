@@ -19,7 +19,7 @@ export default function Skills({ skills }: { skills: SkillMap }) {
           const colorClass = CATEGORY_COLORS[category] ?? "bg-slate-50 text-slate-600 border-slate-100";
           return (
             <div key={category}>
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-[#8a87a2] mb-3">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-[#5a5775] mb-3">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-2">

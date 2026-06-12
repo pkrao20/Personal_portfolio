@@ -19,7 +19,7 @@ export default function PageShell({
       <main className="flex-1 max-w-4xl mx-auto w-full px-6 pt-24 pb-16">
         <Link
           href={backHref}
-          className="inline-flex items-center gap-2 text-sm text-[#8a87a2] hover:text-[#4e4b6a] transition-colors mb-10"
+          className="inline-flex items-center gap-2 text-sm text-[#5a5775] hover:text-[#2d2b45] transition-colors mb-10"
         >
           <ArrowLeft size={14} />
           {backLabel}

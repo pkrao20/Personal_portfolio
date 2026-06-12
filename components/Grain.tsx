@@ -52,9 +52,9 @@ export default function Grain() {
         inset: 0,
         width: "100%",
         height: "100%",
-        opacity: 0.04,
+        opacity: 0.07,
         pointerEvents: "none",
-        zIndex: 9999,
+        zIndex: 0,
       }}
     />
   );
